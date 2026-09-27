@@ -1,0 +1,44 @@
+name: Onionskin
+options:
+  bundleIdPrefix: com.jpratt9
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+    CODE_SIGN_IDENTITY: "-"
+    CODE_SIGN_STYLE: Manual
+    ENABLE_HARDENED_RUNTIME: NO
+    GENERATE_INFOPLIST_FILE: YES
+targets:
+  Onionskin:
+    type: application
+    platform: macOS
+    sources: [Sources]
+    settings:
+      base:
+        PRODUCT_NAME: Onionskin
+        PRODUCT_BUNDLE_IDENTIFIER: com.jpratt9.Onionskin
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.productivity
+  OnionskinTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources: [Tests]
+    dependencies:
+      - target: Onionskin
+    settings:
+      base:
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/Onionskin.app/Contents/MacOS/Onionskin"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+schemes:
+  Onionskin:
+    build:
+      targets:
+        Onionskin: all
+        OnionskinTests: [test]
+    test:
+      targets: [OnionskinTests]
