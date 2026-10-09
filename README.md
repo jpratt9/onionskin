@@ -1,6 +1,6 @@
 # Onionskin
 
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/prattsolutions)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/prattsolutions)
 
 <img src="docs/screenshot.jpg" alt="Onionskin's main window at 55% opacity, with the desktop showing through behind the notes list and a meeting agenda">
 
