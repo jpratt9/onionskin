@@ -2,7 +2,7 @@
 
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/prattsolutions)
 
-<img src="docs/screenshot.png" alt="Onionskin's main window: the notes list beside a meeting agenda" width="828">
+<img src="docs/screenshot.jpg" alt="Onionskin's main window at 55% opacity, with the desktop showing through behind the notes list and a meeting agenda">
 
 A see-through note window that floats over other apps. Use it for an agenda during a video call, study notes next to a PDF, or figures beside a spreadsheet.
 
